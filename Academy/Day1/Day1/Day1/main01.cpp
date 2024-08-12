@@ -1,15 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
 void main() 
 {
-	printf("µ¿ÇØ¹°°ú ¹éµÎ»êÀÌ ¸¶¸£°í ´âµµ·Ï\n");
-	printf("ÇÏ´À´ÔÀÌ º¸¿ìÇÏ»ç ¿ì¸®³ª¶ó ¸¸¼¼\n");
-	printf("¹«±ÃÈ­ »ïÃµ¸® È­·Á °­»ê\n");
-	printf("´ëÇÑ »ç¶÷ ´ëÇÑÀ¸·Î ±æÀÌ º¸ÀüÇÏ¼¼\n");
+	printf("ë™í•´ë¬¼ê³¼ ë°±ë‘ì‚°ì´ ë§ˆë¥´ê³  ë‹³ë„ë¡\n");
+
+	printf("í•˜ëŠë‹˜ì´ ë³´ìš°í•˜ì‚¬ ìš°ë¦¬ë‚˜ë¼ ë§Œì„¸\n");
+
+	printf("ë¬´ê¶í™” ì‚¼ì²œë¦¬ í™”ë ¤ ê°•ì‚°\n");
+
+	printf("ëŒ€í•œ ì‚¬ëžŒ ëŒ€í•œìœ¼ë¡œ ê¸¸ì´ ë³´ì „í•˜ì„¸\n");
 }
 
 //#include <iostream>
-// iostream << [input output] streamÀ» ´Ù·ç´Â ³»¿ëÀ» Æ÷ÇÔ
+// iostream << [input output] streamì„ ë‹¤ë£¨ëŠ” ë‚´ìš©ì„ í¬í•¨
 // 

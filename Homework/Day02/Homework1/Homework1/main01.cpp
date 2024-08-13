@@ -4,31 +4,43 @@ using namespace std;
 
 void main()
 {
-	//숙제
-	/*
-
-/*
- 1. BMI 측정 프로그램 만들기
- // 출력예시
-	키(m)를 입력해주세요.
-	몸무게 (kg)을 입력해주세요.
-	BMI 지수 : 24.5
-	과체중입니다. (0 ~ 18.5 저체중, ~ 23 정상체중, ~25 과체중 , ~30 비만, ~ 무한대 고도비만)
-*/
-
-/*
- 2. 학점 계산기
- // 출력예시
- //	 중간평가 점수를 입력해주세요.
- //	 기말평가 점수를 입력해주세요.
- //  출석점수를 입력해주세요.
- //  과제 점수를 입력해주세요.
- // F입니다. (0 ~ 60 F, ~ 70 D, ~ 80 C, ~ 90 B, ~ 100 A)
-*/
-
-/*
-3. 홀수짝수 판별기
- // 출력 예시
- // 숫자를 입력해주세요. [14]
- // 14는 짝수입니다.
+	float height;
+	int weight;
+	float bmi1;
+	string bmi2;
+	printf("키(cm)를 입력해주세요.");
+	scanf_s("%f", &height);
+	
+	printf("몸무게(kg)를 입력해주세요.");
+	scanf_s("%d", &weight);
+	
+	
+	
+	height = height / 100;
+	
+	bmi1 = weight / (height * height);
+	
+	printf("BMI 지수 : %.1f\n", bmi1);
+	
+	if (bmi1 <= 18.5 && bmi1 > 0)
+	{
+		bmi2 = "저체중";
+	}
+	else if (bmi1 <= 23 && bmi1 > 18.5)
+	{
+		bmi2 = "정상체중";
+	}
+	else if (bmi1 <= 25 && bmi1 > 23)
+	{
+		bmi2 = "과체중";
+	}
+	else if (bmi1 <= 30 && bmi1 > 25)
+	{
+		bmi2 = "비만";
+	}
+	else if (bmi1 > 30)
+	{
+		bmi2 = "무한대";
+	}
+	printf("%s입니다.", bmi2.c_str());
 }

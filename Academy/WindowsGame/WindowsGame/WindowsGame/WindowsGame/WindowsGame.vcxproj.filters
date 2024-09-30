@@ -50,5 +50,11 @@
     <None Include="Comment4.md">
       <Filter>Comment</Filter>
     </None>
+    <None Include="Comment5.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment6.md">
+      <Filter>Comment</Filter>
+    </None>
   </ItemGroup>
 </Project>

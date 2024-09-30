@@ -90,32 +90,24 @@ void SetWindowSize(int x, int y, int width, int height)
 
 POINT mousePos = {};
 
-class Enemy
-{
-public:
-	RECT rc;
-	bool isLive;
-	int number;
+RECT rc1;
+RECT rc2;
+RECT player;
 
-	void Die()
-	{
-		isLive = false;
-	}
-	void Draw(HDC hdc)
-	{
-		::Rectangle(hdc, rc.left, rc.top, rc.right, rc.bottom);
-	}
-	bool IsLive()
-	{
-		return isLive;
-	}
-	void Spawn()
-	{
-		isLive = true;
-	}
-};
+// 숙제 1. 
+//  - 플레이어의 RECT가 상하좌우 최대로 움직였을때, 그걸 감싸고있는 RECT를 벗어나려고하면 
+//    같이 움직인다.
 
-vector<Enemy> enemies;
+// 숙제 2.
+//  - 큰네모랑 플레이어랑 같이 움직이다가 다른 큰네모랑 충돌하게되면
+//    플레이어의 RECT가 다른 큰 네모의 가운데로 순간이동한다.
+
+// 숙제 3.
+//  - 다른 솔루션으로 진행하셔도되고, (숙제1,과 2랑은 같은화면에 하기힘들거같아요)
+//  - 게임모드를 정해서 1번키 누르면 숙제 1,2 씬
+//                    2번키 누르면 숙제 3번 씬
+
+
 
 LRESULT WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -126,39 +118,16 @@ LRESULT WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		// 여기에서 초기화 동작
 		srand(time(NULL));
 
-		//60프레임 -> 타이머호출주기
+		rc1 = { 100, 100, 600,  600 };
+
+		rc2 = { 900, 100, 1200,  400 };
+
+		player = { 200, 200, 250, 250 };
+
 		SetTimer(hWnd, 1, 1000 / 60, NULL);
-
-		//두더지 튀어나오기
-		SetTimer(hWnd, 2, 1000, NULL);
-
-		for (int i = 0; i < 9; i++)
-		{
-			Enemy newEnemy;
-			newEnemy.isLive = false;
-			newEnemy.rc = {
-				(i % 3) * 100 ,
-				(i / 3) * 100,
-				(i % 3) * 100 + 70,
-				(i / 3) * 100 + 70
-			};
-			enemies.push_back(newEnemy);
-		}
-
 		break;
 
 	case WM_LBUTTONDOWN:
-		for (Enemy& enemy : enemies)
-		{
-			if (Collision::PtInRect(mousePos, enemy.rc) && enemy.IsLive())
-			{
-				enemy.Die();
-				score++;
-
-				KillTimer(hWnd, 100 * enemy.number);
-			}
-		}
-
 		break;
 	case WM_PAINT:
 	{
@@ -168,36 +137,38 @@ LRESULT WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		PAINTSTRUCT ps;
 		HDC hdc = ::BeginPaint(hWnd, &ps);
 
-		for (Enemy enemy : enemies)
-		{
-			if (enemy.IsLive())
-			{
-				enemy.Draw(hdc);
-			}
-		}
-		wstring scoreText = format(L"score : {}", score);
-		Draw::Text(hdc, 800, 0, scoreText);
+		//Draw::Rectangle(hdc, rc1);
+		Draw::Rectangle(hdc, rc2);
+		Draw::Rectangle(hdc, player);
 
 		::EndPaint(hWnd, &ps);
 	}
 	break;
 
 	case WM_KEYDOWN:
-	{
 		switch (wParam)
 		{
-		case 'A':
-		
+		case VK_UP:
+			player.top -= 1;
+			player.bottom -= 1;
 			break;
-
-		case 'S':
-		
+		case VK_RIGHT:
+			player.left += 1;
+			player.right += 1;
+			break;
+		case VK_LEFT:
+			player.left -= 1;
+			player.right -= 1;
+			break;
+		case VK_DOWN:
+			player.top += 1;
+			player.bottom += 1;
 			break;
 		default:
 			break;
 		}
-	}
-	break;
+
+		break;
 
 	case WM_MOUSEMOVE:
 	{
@@ -213,42 +184,6 @@ LRESULT WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			InvalidateRect(hWnd, NULL, true);
 			break;
 
-		case 2:
-			int enemyNumber = rand() % 9 + 1;
-			SetTimer(hWnd, enemyNumber * 100, 5000, NULL);
-			enemies[enemyNumber - 1].Spawn();
-			break;
-
-		case 100:
-			//두더지 들어가는 로직
-			enemies[0].Die();
-			break;
-		case 200:
-			//두더지 들어가는 로직
-			enemies[1].Die();
-			break;
-		case 300:
-			//두더지 들어가는 로직
-			enemies[2].Die();
-			break;
-		case 400:
-			enemies[3].Die();
-			break;
-		case 500:
-			enemies[4].Die();
-			break;
-		case 600:
-			enemies[5].Die();
-			break;
-		case 700:
-			enemies[6].Die();
-			break;
-		case 800:
-			enemies[7].Die();
-			break;
-		case 900:
-			enemies[8].Die();
-			break;
 		default:
 			break;
 		}

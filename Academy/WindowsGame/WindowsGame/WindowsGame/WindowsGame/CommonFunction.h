@@ -6,3 +6,8 @@ namespace Draw
 	void Rectangle(HDC hdc, int x, int y, int width, int height);
 	void Ellipse(HDC hdc, int x, int y, int width, int height);
 }
+
+namespace Collision
+{
+	bool PtInRect(POINT pt, RECT rc);
+}

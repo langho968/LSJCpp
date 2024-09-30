@@ -16,3 +16,19 @@ namespace Draw
 		::Ellipse(hdc, x - width / 2, y - height / 2, x + width / 2, y + height / 2);
 	}
 }
+
+namespace Collision
+{
+	bool PtInRect(POINT pt, RECT rc)
+	{
+		if (rc.left <= pt.x && pt.x <= rc.right)
+		{
+			if (rc.top <= pt.y && pt.y <= rc.bottom)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	
+}

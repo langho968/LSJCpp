@@ -12,4 +12,5 @@ namespace Collision
 {
 	bool PtInRect(POINT pt, RECT rc);
 	bool RectInRect(RECT rc1, RECT rc2);
+	bool RectInRect(CenterRect centerRect1, CenterRect centerRect2);
 }

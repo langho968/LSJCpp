@@ -42,11 +42,27 @@ using namespace std;
 //	## Define 관련 헤더 ##
 //==========================================
 #include "Defines.h"
+#include "Enums.h"
 
 
 //==========================================
-//	## Custom 관련 헤더 ##
+//	## Types 관련 헤더 ##
+//==========================================
+#include "Types.h"
+#include "Vector2.h"
+#include "CenterRect.h"
+
+
+//==========================================
+//	## Custom 헤더 ##
 //==========================================
 #include "CommonFunction.h"
+
+//==========================================
+//	## 매니저 헤더 ##
+//=========================================
+#include "InputManager.h"
+#include "TimeManager.h"
+#include "SceneManager.h"
 
 

@@ -14,6 +14,18 @@
     <Filter Include="Comment">
       <UniqueIdentifier>{3da2f621-17b5-437c-83fa-f14c5c9e363e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="99.Utils\Types">
+      <UniqueIdentifier>{048c0f10-2372-48f1-847c-479884b7bc95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Managers">
+      <UniqueIdentifier>{40ea0df8-05bd-4208-b927-d6e541be85e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Objects">
+      <UniqueIdentifier>{ad1089ca-e1d7-4753-84c9-d5fca526e1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Scenes">
+      <UniqueIdentifier>{e582356c-473e-40fb-a1b7-0329c34c28c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsMain.cpp">
@@ -25,6 +37,45 @@
     <ClCompile Include="pch.cpp">
       <Filter>99.Utils</Filter>
     </ClCompile>
+    <ClCompile Include="CenterRect.cpp">
+      <Filter>99.Utils\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>99.Utils\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>00.MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>01.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Day17Player.cpp">
+      <Filter>02.Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>01.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Day17Box.cpp">
+      <Filter>02.Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>01.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="DevScene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Day17Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Day18Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Day18HomeworkScene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonFunction.h">
@@ -35,6 +86,51 @@
     </ClInclude>
     <ClInclude Include="Defines.h">
       <Filter>99.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CenterRect.h">
+      <Filter>99.Utils\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>99.Utils\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>00.MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>01.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Day17Player.h">
+      <Filter>02.Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>99.Utils\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>01.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Day17Box.h">
+      <Filter>02.Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>01.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>99.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="DevScene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Day17Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Day18Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Day18HomeworkScene.h">
+      <Filter>03.Scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +150,24 @@
       <Filter>Comment</Filter>
     </None>
     <None Include="Comment6.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment7.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment8.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment9.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment10.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment11.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment12.md">
       <Filter>Comment</Filter>
     </None>
   </ItemGroup>

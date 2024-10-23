@@ -26,6 +26,21 @@
     <Filter Include="03.Scenes">
       <UniqueIdentifier>{e582356c-473e-40fb-a1b7-0329c34c28c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="04.Resources">
+      <UniqueIdentifier>{29865412-e8de-4e1d-ae4c-2817981ff44e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Objects\Day17">
+      <UniqueIdentifier>{6fa22caa-d487-4ca9-be70-b0bbc12cc0df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Objects\Day19">
+      <UniqueIdentifier>{a4fa87db-b405-4d96-8b19-821574015b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Components">
+      <UniqueIdentifier>{77bfdfa7-1e3d-46cc-a697-a9e2be05f065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Objects\Day21">
+      <UniqueIdentifier>{3198678e-4cb4-4c98-beac-7cf8182d658b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsMain.cpp">
@@ -49,14 +64,8 @@
     <ClCompile Include="InputManager.cpp">
       <Filter>01.Managers</Filter>
     </ClCompile>
-    <ClCompile Include="Day17Player.cpp">
-      <Filter>02.Objects</Filter>
-    </ClCompile>
     <ClCompile Include="TimeManager.cpp">
       <Filter>01.Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="Day17Box.cpp">
-      <Filter>02.Objects</Filter>
     </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>03.Scenes</Filter>
@@ -73,8 +82,86 @@
     <ClCompile Include="Day18Scene.cpp">
       <Filter>03.Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="Day18HomeworkScene.cpp">
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>01.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceBase.cpp">
+      <Filter>04.Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>04.Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2Int.cpp">
+      <Filter>99.Utils\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Day19Scene.cpp">
       <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>04.Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Day17Box.cpp">
+      <Filter>02.Objects\Day17</Filter>
+    </ClCompile>
+    <ClCompile Include="Day17Player.cpp">
+      <Filter>02.Objects\Day17</Filter>
+    </ClCompile>
+    <ClCompile Include="Day19Stone.cpp">
+      <Filter>02.Objects\Day19</Filter>
+    </ClCompile>
+    <ClCompile Include="Day20Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomManager.cpp">
+      <Filter>01.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>02.Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>05.Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Day21Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Day21Paddle.cpp">
+      <Filter>02.Objects\Day21</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteRenderer.cpp">
+      <Filter>05.Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Day21Ball.cpp">
+      <Filter>02.Objects\Day21</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>05.Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>01.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Day22Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider.cpp">
+      <Filter>05.Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Day21Brick.cpp">
+      <Filter>02.Objects\Day21</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxRenderer.cpp">
+      <Filter>05.Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Flipbook.cpp">
+      <Filter>04.Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Day23Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Day24Scene.cpp">
+      <Filter>03.Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="FlipbookRenderer.cpp">
+      <Filter>05.Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -99,17 +186,11 @@
     <ClInclude Include="InputManager.h">
       <Filter>01.Managers</Filter>
     </ClInclude>
-    <ClInclude Include="Day17Player.h">
-      <Filter>02.Objects</Filter>
-    </ClInclude>
     <ClInclude Include="Types.h">
       <Filter>99.Utils\Types</Filter>
     </ClInclude>
     <ClInclude Include="TimeManager.h">
       <Filter>01.Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="Day17Box.h">
-      <Filter>02.Objects</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>03.Scenes</Filter>
@@ -129,8 +210,86 @@
     <ClInclude Include="Day18Scene.h">
       <Filter>03.Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="Day18HomeworkScene.h">
+    <ClInclude Include="ResourceManager.h">
+      <Filter>01.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBase.h">
+      <Filter>04.Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>04.Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2Int.h">
+      <Filter>99.Utils\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Day19Scene.h">
       <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>04.Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Day17Box.h">
+      <Filter>02.Objects\Day17</Filter>
+    </ClInclude>
+    <ClInclude Include="Day17Player.h">
+      <Filter>02.Objects\Day17</Filter>
+    </ClInclude>
+    <ClInclude Include="Day19Stone.h">
+      <Filter>02.Objects\Day19</Filter>
+    </ClInclude>
+    <ClInclude Include="Day20Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomManager.h">
+      <Filter>01.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>02.Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>05.Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Day21Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Day21Paddle.h">
+      <Filter>02.Objects\Day21</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteRenderer.h">
+      <Filter>05.Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Day21Ball.h">
+      <Filter>02.Objects\Day21</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>05.Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>01.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Day22Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider.h">
+      <Filter>05.Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Day21Brick.h">
+      <Filter>02.Objects\Day21</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxRenderer.h">
+      <Filter>05.Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Flipbook.h">
+      <Filter>04.Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Day23Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Day24Scene.h">
+      <Filter>03.Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="FlipbookRenderer.h">
+      <Filter>05.Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +327,24 @@
       <Filter>Comment</Filter>
     </None>
     <None Include="Comment12.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment13.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment14.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment15.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment16.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment17.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment18.md">
       <Filter>Comment</Filter>
     </None>
   </ItemGroup>

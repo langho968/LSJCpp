@@ -4,8 +4,8 @@
 //==========================================
 //	## 윈도우 사이즈 ##
 //==========================================
-#define WIN_SIZE_X 1280
-#define WIN_SIZE_Y 900
+#define WIN_SIZE_X 579
+#define WIN_SIZE_Y 579
 
 #ifdef _ACADEMY_
 #define WIN_START_X 2000
@@ -38,3 +38,12 @@ public:										\
 // (0.000001)
 #define EPSILON 1e-6f
 #define EQUALS(a, b) (abs(a - b) < EPSILON)
+
+#define DECLARE_CHILD(ClassName, ParentName) \
+public:										 \
+using Super = ParentName;					 \
+ClassName() {}								 \
+virtual ~ClassName() {}	
+
+
+#define Alert(title, message) MessageBox(_hWnd, message, title, NULL)

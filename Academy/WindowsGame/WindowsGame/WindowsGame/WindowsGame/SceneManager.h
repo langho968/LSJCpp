@@ -2,7 +2,7 @@
 class Scene;
 class SceneManager
 {
-DECLARE_SINGLE(SceneManager);
+	DECLARE_SINGLE(SceneManager);
 
 public:
 	void Init();
@@ -12,7 +12,7 @@ public:
 
 public:
 	void ChangeScene(SceneType sceneType);
-
+	Scene* GetCurrentScene() { return _scene; }
 private:
 	Scene* CreateScene(SceneType sceneType);
 
@@ -23,5 +23,3 @@ private:
 private:
 	Scene* _scene = nullptr;
 };
-
- 

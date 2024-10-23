@@ -26,7 +26,9 @@ void Day23Scene::Init()
 		gameObject->SetBody(CenterRect(WIN_SIZE_X / 2, WIN_SIZE_Y / 2));
 		{
 			FlipbookRenderer* componenet = new FlipbookRenderer();
-			componenet->SetFlipbookInfo(Resource->GetFlipbook(L"FB_character_right_move")->GetInfo());
+			FlipbookRendererInfo info;
+			info.FlipbookKey = L"FB_character_right_move";
+			componenet->SetInfo(info);
 			gameObject->AddComponent(componenet);
 		}
 		this->SpawnGameObject(gameObject);

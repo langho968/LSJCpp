@@ -41,6 +41,9 @@
     <Filter Include="02.Objects\Day21">
       <UniqueIdentifier>{3198678e-4cb4-4c98-beac-7cf8182d658b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02.Objects\Day24">
+      <UniqueIdentifier>{4adabb90-6489-47e9-bc4e-6be01ed16245}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsMain.cpp">
@@ -115,9 +118,6 @@
     <ClCompile Include="RandomManager.cpp">
       <Filter>01.Managers</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>02.Objects</Filter>
-    </ClCompile>
     <ClCompile Include="Component.cpp">
       <Filter>05.Components</Filter>
     </ClCompile>
@@ -162,6 +162,12 @@
     </ClCompile>
     <ClCompile Include="FlipbookRenderer.cpp">
       <Filter>05.Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Day24Character.cpp">
+      <Filter>02.Objects\Day24</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>02.Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +297,9 @@
     <ClInclude Include="FlipbookRenderer.h">
       <Filter>05.Components</Filter>
     </ClInclude>
+    <ClInclude Include="Day24Character.h">
+      <Filter>02.Objects\Day24</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Comment1.md">
@@ -345,6 +354,9 @@
       <Filter>Comment</Filter>
     </None>
     <None Include="Comment18.md">
+      <Filter>Comment</Filter>
+    </None>
+    <None Include="Comment19.md">
       <Filter>Comment</Filter>
     </None>
   </ItemGroup>

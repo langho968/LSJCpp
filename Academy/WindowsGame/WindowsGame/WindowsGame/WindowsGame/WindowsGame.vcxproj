@@ -181,6 +181,7 @@
   <ItemGroup>
     <ClCompile Include="BoxCollider.cpp" />
     <ClCompile Include="BoxRenderer.cpp" />
+    <ClCompile Include="CameraComponent.cpp" />
     <ClCompile Include="CenterRect.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
@@ -195,6 +196,11 @@
     <None Include="Comment17.md" />
     <None Include="Comment18.md" />
     <None Include="Comment19.md" />
+    <None Include="Comment20.md" />
+    <None Include="Comment21.md" />
+    <None Include="Comment22.md" />
+    <None Include="Comment23.md" />
+    <None Include="Comment24.md" />
     <None Include="Comment4.md">
       <FileType>Document</FileType>
     </None>
@@ -212,8 +218,12 @@
     <ClCompile Include="Day21Scene.cpp" />
     <ClCompile Include="Day22Scene.cpp" />
     <ClCompile Include="Day23Scene.cpp" />
-    <ClCompile Include="Day24Character.cpp" />
+    <ClCompile Include="Day24Bullet.cpp" />
+    <ClCompile Include="Day24Creature.cpp" />
+    <ClCompile Include="Day24Enemy.cpp" />
     <ClCompile Include="Day24Scene.cpp" />
+    <ClCompile Include="Day26Scene.cpp" />
+    <ClCompile Include="Day27Scene.cpp" />
     <ClCompile Include="DevScene.cpp" />
     <ClCompile Include="Flipbook.cpp" />
     <ClCompile Include="FlipbookRenderer.cpp" />
@@ -234,6 +244,8 @@
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteRenderer.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Tilemap.cpp" />
+    <ClCompile Include="TilemapRenderer.cpp" />
     <ClCompile Include="TimeManager.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector2Int.cpp" />
@@ -247,6 +259,7 @@
   <ItemGroup>
     <ClInclude Include="BoxCollider.h" />
     <ClInclude Include="BoxRenderer.h" />
+    <ClInclude Include="CameraComponent.h" />
     <ClInclude Include="CenterRect.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CollisionManager.h" />
@@ -265,8 +278,12 @@
     <ClInclude Include="Day21Scene.h" />
     <ClInclude Include="Day22Scene.h" />
     <ClInclude Include="Day23Scene.h" />
-    <ClInclude Include="Day24Character.h" />
+    <ClInclude Include="Day24Bullet.h" />
+    <ClInclude Include="Day24Creature.h" />
+    <ClInclude Include="Day24Enemy.h" />
     <ClInclude Include="Day24Scene.h" />
+    <ClInclude Include="Day26Scene.h" />
+    <ClInclude Include="Day27Scene.h" />
     <ClInclude Include="Defines.h" />
     <ClInclude Include="DevScene.h" />
     <ClInclude Include="Enums.h" />
@@ -284,6 +301,8 @@
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteRenderer.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="Tilemap.h" />
+    <ClInclude Include="TilemapRenderer.h" />
     <ClInclude Include="TimeManager.h" />
     <ClInclude Include="Types.h" />
     <ClInclude Include="Vector2.h" />

@@ -55,6 +55,7 @@ public:
 	bool GetKeyUp(KeyCode key);
 
 	POINT GetMousePos();
+	Vector2 GetMousePosVector2();
 private:
 	// _states['W'] => Press
 	// _states['W'] => Up
